@@ -8,25 +8,23 @@
     <link href="img/fav/favicon.ico" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    
-    <title>Emily Woodall Website</title>
+    <title>About Page</title>
   </head>
   <body id="about-page">
     <!-- For the header -->
 	<header>
 		<!-- For the navigation -->
 		<div class="container">
-            <a href="about.html">
+            <a href="index.html">
 			 <img src="img/logo/portfolioBanner_01.png" class="logo" alt="Emily Woodall Banner" >
             </a>
             <nav>
               <ul class="navigation">
-                <li class="active"><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
+                <li ><a href="index.html">Work</a></li>
+                <li class="active"><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
@@ -34,22 +32,19 @@
 	</header>
 
     <main>   
-    <!-- For the main section -->
-        <picture>
-            <img src="img/logo/profileImage.jpg" class="profile-image" alt="Emily Woodall Picture">
-        </picture>
-        <div class="container">
-            <div class="row">
-                    <h3>About Me</h3>
-                    <p>As a seasoned designer with a unique trajectory from apparel design to UI design complemented by frontend development skills, I bring a distinctive blend of creativity and technical acumen to the field. My journey reflects a seamless transition, leveraging a foundation in apparel design to navigate the dynamic landscape of UI/UX. Passionate about user-centric design, I thrive on understanding and addressing user needs through iterative processes, always incorporating empathy into my design ethos. A staunch advocate for accessibility, I am committed to ensuring that every digital experience is inclusive and user-friendly. Proficient in HTML, CSS, and JavaScript, I bridge the gap between design and development seamlessly, creating cohesive and aesthetically pleasing interfaces. My professional journey is a testament to my adaptability, commitment to innovation, and the continuous pursuit of excellence in the ever-evolving realm of user experience and frontend development.</p>
-            </div>    
+        <!-- For the main section -->
+        <div id="hero" style="margin-bottom: 40px;">
+            <div class="container">
+            <h3>About Me</h3>
+            <picture id="profileImage">
+                <img src="img/logo/profileImage.jpg" class="profile-image" alt="Emily Woodall Picture">
+            </picture>
+                <p>As a seasoned designer with a unique trajectory from apparel design to UI design complemented by frontend development skills, I bring a distinctive blend of creativity and technical acumen to the field. My journey reflects a seamless transition, leveraging a foundation in apparel design to navigate the dynamic landscape of UI/UX. Passionate about user-centric design, I thrive on understanding and addressing user needs through iterative processes, always incorporating empathy into my design ethos. A staunch advocate for accessibility, I am committed to ensuring that every digital experience is inclusive and user-friendly. Proficient in HTML, CSS, and JavaScript, I bridge the gap between design and development seamlessly, creating cohesive and aesthetically pleasing interfaces. My professional journey is a testament to my adaptability, commitment to innovation, and the continuous pursuit of excellence in the ever-evolving realm of user experience and frontend development.</p>
+            </div>
         </div>
-
-        <!-- For the expertise and skills section -->
         <div class="container">
-            <div class="row">
-                <div class="column col-md-6 col-lg-7">
-                    <h3>Areas of Expertise</h3>
+            <div class="column col-md-6 col-lg-7 col-xl-8">
+                <h3>Areas of Expertise</h3>
                     <ul>
                         <li>UI Design</li>
                         <li>UX Design</li>
@@ -70,9 +65,10 @@
                         <li>Detail Oriented</li>
                         <li>Creative Problem Solving</li>
                     </ul>
-                </div>
-                <div class="column col-md-6 col-lg-5">
-                    <h3>Technical Skills</h3>
+            </div>
+        <div class="container">
+            <div class="column col-md-6 col-lg-5 col-xl-4">
+                <h3>Technical Skills</h3>
                     <ul>
                         <li>Figma</li>
                         <li>Adobe XD</li>
@@ -89,7 +85,7 @@
                         <li>Prototyping</li>
                         <li>Mockups</li>
                         <li>Responsive Breakpoints</li>
-                        <li>Git</li>
+                        <li>VSCode</li>
                         <li>Github</li>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -98,12 +94,13 @@
                         <li>Trend Research</li>
                         <li>FlexPLM</li>
                     </ul>
-                </div>
-            </div>    
+            </div>
         </div>
 
         <div>
-            <a href="files/resume/resumeEmilyWoodall.pdf" download class="button" style="margin-left: 20px;">Download my Resume</a>
+            <a href="files/resume/resumeEmilyWoodall.pdf" target="_blank" download class="button" style= "margin-left:10px; margin-bottom:20px;">Download my Resume</a>
+        </div>
+
         </div>
     </main>
   
@@ -131,7 +128,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/GARDNEEY">
+                    <a href="https://github.com/GARDNEEY" target="_blank">
                         <img src="img/logo/githubIcon.svg" alt="Github">
                     </a>
                 </li>
