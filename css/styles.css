@@ -139,15 +139,15 @@
   /*style the <header> element*/
   header {
     background-color: #f7e4e0;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 4px;
+    padding-top: 5px;
     position: relative;
     box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.15);
   }
   
   /*style the logo*/
   header .logo {
-    max-width: 400px;
+    max-width: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -163,23 +163,47 @@
   }
   
   /*Navigation Styling*/
-  nav {
-    display: inline-block;
-  }
   
   nav > ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  nav > ul > li {
-    display: inline-block;
+    margin: 0;
   }
   
   nav > ul > li > a {
     padding: 0 15px;
     font-weight: 700;
     color: #19202c;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,127,80,0.5);
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
   }
   
   #hero {
@@ -306,7 +330,7 @@
   /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   body {
     font-size: 18px;
   }
@@ -325,6 +349,18 @@ Medium devices (640px and larger)
     width: 50%;
     float: left;
     padding-bottom: 40px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
   }
     
 }
@@ -360,6 +396,10 @@ Large devices (1024px or larger)
     
    #about-page .col-md-6 {
      width: 100%;
+  }
+
+  header .logo {
+    min-width: 641px
   }
 }
 
@@ -401,4 +441,9 @@ Extra Large devices (1440px or larger)
    #about-page .col-md-6 {
      width: 100%;
   }
+
+  header .logo {
+    min-width: 641px
+  }
+
 }
