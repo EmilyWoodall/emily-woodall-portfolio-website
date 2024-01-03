@@ -52,7 +52,7 @@
   
   /*setting images to full-width*/
   img {
-    width: 100%;
+    width: 80%;
   }
   
   /*change the default link color to your primary color (copied from your comments at the top of the document)*/
@@ -147,15 +147,15 @@
   
   /*style the logo*/
   header .logo {
-    max-width: 150px;
+    max-width: 80px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
   /*style the profile-image*/
   .profile-image {
-    height: 250px;
-    width: 250px;
+    height: 220px;
+    width: 220px;
     margin: 10px;
     padding-right: 10px;
     border-radius: 100%;
@@ -398,6 +398,14 @@ Large devices (1024px or larger)
      width: 100%;
   }
 
+  #about-page .col-lg-8 {
+    width: 50%;
+  }
+
+  #about-page .col-lg-4 {
+  width: 50%;
+  }
+
   header .logo {
     min-width: 641px
   }
@@ -438,8 +446,16 @@ Extra Large devices (1440px or larger)
     float: right;
   }
     
-   #about-page .col-md-6 {
-     width: 100%;
+  #about-page .col-md-6 {
+     width: 50%;
+  }
+
+  #about-page .col-lg-8 {
+    width: 50%;
+  }
+
+  #about-page .col-lg-4 {
+  width: 50%;
   }
 
   header .logo {
